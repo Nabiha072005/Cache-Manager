@@ -1,0 +1,981 @@
+
+Processing testCase1 commands:
+
+
+Calling isEmpty().
+isEmpty returned: 1
+Calling add(20).
+Successfully added: 20
+Calling add(30).
+Successfully added: 30
+Calling printSort(ascending)
+
+Performing in-order traversal
+Node key: 20
+Node key: 30
+End of binary search tree
+Successfully called printSort.
+Calling printSort(descending)
+
+Performing reverse-order traversal
+Node key: 30
+Node key: 20
+End of binary search tree
+Successfully called printSort.
+Calling clear()
+Successfully called clear.
+Calling isEmpty().
+isEmpty returned: 1
+Calling add(40).
+Successfully added: 40
+Calling add(50).
+Successfully added: 50
+Calling remove(106)
+Successfully removed: 106
+Calling getHeightOfTree
+Successfully retrieved height of tree: 2
+Calling printBreadthFirst
+Performing Breadth First traversal
+Node key: 40
+Node key: 50
+Successfully printed tree breadth first
+Calling printDepthFirst
+Performing Depth First via PreOrder traversal
+Performing Pre-order traversal
+Node key: 40
+Node key: 50
+Successfully printed tree depth first
+Calling printInOrder
+
+Performing in-order traversal
+Node key: 40
+Node key: 50
+End of binary search tree
+Successfully printed tree inorder
+Calling printPostOrder
+Performing Post-order traversal
+Node key: 50
+Node key: 40
+Successfully printed tree post order
+Calling printPreOrder
+Performing Pre-order traversal
+Node key: 40
+Node key: 50
+Successfully printed tree pre order
+Calling printCache
+
+
+Printing out the cache contents
+
+Here are the FIFO List contents:
+FIFO Node key: 50, fullName: John Doe5, address: 1234 State St, city: Oakland, state: CA, zip: 12345
+FIFO Node key: 40, fullName: John Doe4, address: 1234 Home St, city: Oakland, state: CA, zip: 12345
+End of FIFO List
+
+Here are the Hash Table contents (2 entries):
+Bucket 0: Empty
+Bucket 1: Empty
+Bucket 2: Empty
+Bucket 3: Empty
+Bucket 4: Empty
+Bucket 5: Empty
+Bucket 6: 
+FIFO info from cacheManager:  Node key: 50
+Bucket 7: 
+FIFO info from cacheManager:  Node key: 40
+Bucket 8: Empty
+Bucket 9: Empty
+Bucket 10: Empty
+End of table
+
+
+Performing in-order traversal
+Node key: 40
+Node key: 50
+End of binary search tree
+
+Performing reverse-order traversal
+Node key: 50
+Node key: 40
+End of binary search tree
+
+End of cache contents
+
+Successfully printed cache
+
+Calling printList
+
+Here are the FIFO List contents:
+FIFO Node key: 50, fullName: John Doe5, address: 1234 State St, city: Oakland, state: CA, zip: 12345
+FIFO Node key: 40, fullName: John Doe4, address: 1234 Home St, city: Oakland, state: CA, zip: 12345
+End of FIFO List
+Successfully called printList
+Calling isEmpty().
+isEmpty returned: 0
+
+
+Finished processing testcase: testCase1.
+
+
+
+Processing testCase2 commands:
+
+
+Calling add(101).
+Successfully added: 101
+Calling add(102).
+Successfully added: 102
+Calling add(202).
+Successfully added: 202
+Calling getSize().
+getSize returned: 3
+Calling add(303).
+Successfully added: 303
+Calling add(402).
+Successfully added: 402
+Calling add(502).
+Successfully added: 502
+Calling add(602).
+Successfully added: 602
+Calling add(702).
+Successfully added: 702
+Calling printSort(ascending)
+
+Performing in-order traversal
+Node key: 101
+Node key: 102
+Node key: 202
+Node key: 303
+Node key: 402
+Node key: 502
+Node key: 602
+Node key: 702
+End of binary search tree
+Successfully called printSort.
+Calling printSort(descending)
+
+Performing reverse-order traversal
+Node key: 702
+Node key: 602
+Node key: 502
+Node key: 402
+Node key: 303
+Node key: 202
+Node key: 102
+Node key: 101
+End of binary search tree
+Successfully called printSort.
+Calling getSize().
+getSize returned: 8
+Calling remove(202)
+Successfully removed: 202
+Calling getSize().
+getSize returned: 7
+Calling contains(702).
+contains(702) returned: 1
+Calling contains(202).
+contains(202) returned: 0
+Calling contains(901).
+contains(901) returned: 0
+Calling add(808).
+Successfully added: 808
+Calling remove(702)
+Successfully removed: 702
+Calling add(902).
+Successfully added: 902
+Calling getHeightOfTree
+Successfully retrieved height of tree: 8
+Calling printBreadthFirst
+Performing Breadth First traversal
+Node key: 101
+Node key: 102
+Node key: 303
+Node key: 402
+Node key: 502
+Node key: 602
+Node key: 808
+Node key: 902
+Successfully printed tree breadth first
+Calling printDepthFirst
+Performing Depth First via PreOrder traversal
+Performing Pre-order traversal
+Node key: 101
+Node key: 102
+Node key: 303
+Node key: 402
+Node key: 502
+Node key: 602
+Node key: 808
+Node key: 902
+Successfully printed tree depth first
+Calling printInOrder
+
+Performing in-order traversal
+Node key: 101
+Node key: 102
+Node key: 303
+Node key: 402
+Node key: 502
+Node key: 602
+Node key: 808
+Node key: 902
+End of binary search tree
+Successfully printed tree inorder
+Calling printPostOrder
+Performing Post-order traversal
+Node key: 902
+Node key: 808
+Node key: 602
+Node key: 502
+Node key: 402
+Node key: 303
+Node key: 102
+Node key: 101
+Successfully printed tree post order
+Calling printPreOrder
+Performing Pre-order traversal
+Node key: 101
+Node key: 102
+Node key: 303
+Node key: 402
+Node key: 502
+Node key: 602
+Node key: 808
+Node key: 902
+Successfully printed tree pre order
+Calling printSort(ascending)
+
+Performing in-order traversal
+Node key: 101
+Node key: 102
+Node key: 303
+Node key: 402
+Node key: 502
+Node key: 602
+Node key: 808
+Node key: 902
+End of binary search tree
+Successfully called printSort.
+Calling printSort(descending)
+
+Performing reverse-order traversal
+Node key: 902
+Node key: 808
+Node key: 602
+Node key: 502
+Node key: 402
+Node key: 303
+Node key: 102
+Node key: 101
+End of binary search tree
+Successfully called printSort.
+Calling printList
+
+Here are the FIFO List contents:
+FIFO Node key: 902, fullName: Mary Smith, address: 12345 Main St, city: Oakland, state: CA, zip: 12345
+FIFO Node key: 808, fullName: John Doe8, address: 1234 Cabin St, city: Oakland, state: CA, zip: 12345
+FIFO Node key: 602, fullName: John Doe6, address: 1234 Flower St, city: Oakland, state: CA, zip: 12345
+FIFO Node key: 502, fullName: John Doe5, address: 1234 Jack St, city: Oakland, state: CA, zip: 12345
+FIFO Node key: 402, fullName: John Doe4, address: 1234 Brown St, city: Oakland, state: CA, zip: 12345
+FIFO Node key: 303, fullName: John Doe3, address: 1234 Elm St, city: Oakland, state: CA, zip: 12345
+FIFO Node key: 102, fullName: John Doe1, address: 1234 Main St, city: Oakland, state: CA, zip: 12345
+FIFO Node key: 101, fullName: John Smith, address: 123 Main St, city: Oakland, state: CA, zip: 12345
+End of FIFO List
+Successfully called printList
+Calling printCache
+
+
+Printing out the cache contents
+
+Here are the FIFO List contents:
+FIFO Node key: 902, fullName: Mary Smith, address: 12345 Main St, city: Oakland, state: CA, zip: 12345
+FIFO Node key: 808, fullName: John Doe8, address: 1234 Cabin St, city: Oakland, state: CA, zip: 12345
+FIFO Node key: 602, fullName: John Doe6, address: 1234 Flower St, city: Oakland, state: CA, zip: 12345
+FIFO Node key: 502, fullName: John Doe5, address: 1234 Jack St, city: Oakland, state: CA, zip: 12345
+FIFO Node key: 402, fullName: John Doe4, address: 1234 Brown St, city: Oakland, state: CA, zip: 12345
+FIFO Node key: 303, fullName: John Doe3, address: 1234 Elm St, city: Oakland, state: CA, zip: 12345
+FIFO Node key: 102, fullName: John Doe1, address: 1234 Main St, city: Oakland, state: CA, zip: 12345
+FIFO Node key: 101, fullName: John Smith, address: 123 Main St, city: Oakland, state: CA, zip: 12345
+End of FIFO List
+
+Here are the Hash Table contents (8 entries):
+Bucket 0: 
+FIFO info from cacheManager:  Node key: 902
+Bucket 1: Empty
+Bucket 2: 
+FIFO info from cacheManager:  Node key: 101
+Bucket 3: 
+FIFO info from cacheManager:  Node key: 102
+Bucket 4: Empty
+Bucket 5: 
+FIFO info from cacheManager:  Node key: 808
+Bucket 6: 
+FIFO info from cacheManager:  Node key: 402
+FIFO info from cacheManager:  Node key: 303
+Bucket 7: 
+FIFO info from cacheManager:  Node key: 502
+Bucket 8: 
+FIFO info from cacheManager:  Node key: 602
+Bucket 9: Empty
+Bucket 10: Empty
+End of table
+
+
+Performing in-order traversal
+Node key: 101
+Node key: 102
+Node key: 303
+Node key: 402
+Node key: 502
+Node key: 602
+Node key: 808
+Node key: 902
+End of binary search tree
+
+Performing reverse-order traversal
+Node key: 902
+Node key: 808
+Node key: 602
+Node key: 502
+Node key: 402
+Node key: 303
+Node key: 102
+Node key: 101
+End of binary search tree
+
+End of cache contents
+
+Successfully printed cache
+
+
+
+Finished processing testcase: testCase2.
+
+
+
+Processing testCase3 commands:
+
+
+Calling getSize().
+getSize returned: 0
+Calling add(106).
+Successfully added: 106
+Calling add(510).
+Successfully added: 510
+Calling add(108).
+Successfully added: 108
+Calling add(611).
+Successfully added: 611
+Calling printSort(ascending)
+
+Performing in-order traversal
+Node key: 106
+Node key: 108
+Node key: 510
+Node key: 611
+End of binary search tree
+Successfully called printSort.
+Calling printSort(descending)
+
+Performing reverse-order traversal
+Node key: 611
+Node key: 510
+Node key: 108
+Node key: 106
+End of binary search tree
+Successfully called printSort.
+Calling contains(106).
+contains(106) returned: 1
+Calling getSize().
+getSize returned: 4
+Calling remove(106)
+Successfully removed: 106
+Calling contains(106).
+contains(106) returned: 0
+Calling contains(510).
+contains(510) returned: 1
+Calling getSize().
+getSize returned: 3
+Calling add(110).
+Successfully added: 110
+Calling add(111).
+Successfully added: 111
+Calling add(712).
+Successfully added: 712
+Calling add(113).
+Successfully added: 113
+Calling getSize().
+getSize returned: 7
+Calling remove(712)
+Successfully removed: 712
+Calling getSize().
+getSize returned: 6
+Calling add(114).
+Successfully added: 114
+Calling add(115).
+Successfully added: 115
+Calling getHeightOfTree
+Successfully retrieved height of tree: 7
+Calling printBreadthFirst
+Performing Breadth First traversal
+Node key: 510
+Node key: 108
+Node key: 611
+Node key: 110
+Node key: 111
+Node key: 113
+Node key: 114
+Node key: 115
+Successfully printed tree breadth first
+Calling printDepthFirst
+Performing Depth First via PreOrder traversal
+Performing Pre-order traversal
+Node key: 510
+Node key: 108
+Node key: 110
+Node key: 111
+Node key: 113
+Node key: 114
+Node key: 115
+Node key: 611
+Successfully printed tree depth first
+Calling printInOrder
+
+Performing in-order traversal
+Node key: 108
+Node key: 110
+Node key: 111
+Node key: 113
+Node key: 114
+Node key: 115
+Node key: 510
+Node key: 611
+End of binary search tree
+Successfully printed tree inorder
+Calling printPostOrder
+Performing Post-order traversal
+Node key: 115
+Node key: 114
+Node key: 113
+Node key: 111
+Node key: 110
+Node key: 108
+Node key: 611
+Node key: 510
+Successfully printed tree post order
+Calling printPreOrder
+Performing Pre-order traversal
+Node key: 510
+Node key: 108
+Node key: 110
+Node key: 111
+Node key: 113
+Node key: 114
+Node key: 115
+Node key: 611
+Successfully printed tree pre order
+Calling printCache
+
+
+Printing out the cache contents
+
+Here are the FIFO List contents:
+FIFO Node key: 115, fullName: Tony Smith10, address: 12345 Main St, city: Oakland, state: CA, zip: 12345
+FIFO Node key: 114, fullName: Tony Doe9, address: 1234 Cabin St, city: Oakland, state: CA, zip: 12345
+FIFO Node key: 113, fullName: Tony Doe8, address: 1234 Auto St, city: Oakland, state: CA, zip: 12345
+FIFO Node key: 111, fullName: Tony Do6e, address: 1234 Jack St, city: Oakland, state: CA, zip: 12345
+FIFO Node key: 110, fullName: Bill Doe5, address: 1234 Brown St, city: Oakland, state: CA, zip: 12345
+FIFO Node key: 611, fullName: Bill Doe4, address: 1234 Elm St, city: Oakland, state: CA, zip: 12345
+FIFO Node key: 108, fullName: Bill Doe3, address: 1234 Oak St, city: Oakland, state: CA, zip: 12345
+FIFO Node key: 510, fullName: Bill Do2e, address: 1234 Main St, city: Oakland, state: CA, zip: 12345
+End of FIFO List
+
+Here are the Hash Table contents (8 entries):
+Bucket 0: 
+FIFO info from cacheManager:  Node key: 110
+Bucket 1: 
+FIFO info from cacheManager:  Node key: 111
+Bucket 2: Empty
+Bucket 3: 
+FIFO info from cacheManager:  Node key: 113
+Bucket 4: 
+FIFO info from cacheManager:  Node key: 114
+FIFO info from cacheManager:  Node key: 510
+Bucket 5: 
+FIFO info from cacheManager:  Node key: 115
+Bucket 6: 
+FIFO info from cacheManager:  Node key: 611
+Bucket 7: Empty
+Bucket 8: Empty
+Bucket 9: 
+FIFO info from cacheManager:  Node key: 108
+Bucket 10: Empty
+End of table
+
+
+Performing in-order traversal
+Node key: 108
+Node key: 110
+Node key: 111
+Node key: 113
+Node key: 114
+Node key: 115
+Node key: 510
+Node key: 611
+End of binary search tree
+
+Performing reverse-order traversal
+Node key: 611
+Node key: 510
+Node key: 115
+Node key: 114
+Node key: 113
+Node key: 111
+Node key: 110
+Node key: 108
+End of binary search tree
+
+End of cache contents
+
+Successfully printed cache
+
+Calling printList
+
+Here are the FIFO List contents:
+FIFO Node key: 115, fullName: Tony Smith10, address: 12345 Main St, city: Oakland, state: CA, zip: 12345
+FIFO Node key: 114, fullName: Tony Doe9, address: 1234 Cabin St, city: Oakland, state: CA, zip: 12345
+FIFO Node key: 113, fullName: Tony Doe8, address: 1234 Auto St, city: Oakland, state: CA, zip: 12345
+FIFO Node key: 111, fullName: Tony Do6e, address: 1234 Jack St, city: Oakland, state: CA, zip: 12345
+FIFO Node key: 110, fullName: Bill Doe5, address: 1234 Brown St, city: Oakland, state: CA, zip: 12345
+FIFO Node key: 611, fullName: Bill Doe4, address: 1234 Elm St, city: Oakland, state: CA, zip: 12345
+FIFO Node key: 108, fullName: Bill Doe3, address: 1234 Oak St, city: Oakland, state: CA, zip: 12345
+FIFO Node key: 510, fullName: Bill Do2e, address: 1234 Main St, city: Oakland, state: CA, zip: 12345
+End of FIFO List
+Successfully called printList
+Calling getSize().
+getSize returned: 8
+
+
+Finished processing testcase: testCase3.
+
+
+
+Processing testCase4 commands:
+
+
+Calling getSize().
+getSize returned: 0
+Calling add(11).
+Successfully added: 11
+Calling add(22).
+Successfully added: 22
+Calling add(33).
+Successfully added: 33
+Calling add(44).
+Successfully added: 44
+Calling contains(106).
+contains(106) returned: 0
+Calling getSize().
+getSize returned: 4
+Calling getHeightOfTree
+Successfully retrieved height of tree: 4
+Calling remove(44)
+Successfully removed: 44
+Calling contains(44).
+contains(44) returned: 0
+Calling contains(510).
+contains(510) returned: 0
+Calling getSize().
+getSize returned: 3
+Calling getHeightOfTree
+Successfully retrieved height of tree: 3
+Calling add(55).
+Successfully added: 55
+Calling add(66).
+Successfully added: 66
+Calling add(77).
+Successfully added: 77
+Calling add(88).
+Successfully added: 88
+Calling getSize().
+getSize returned: 7
+Calling getHeightOfTree
+Successfully retrieved height of tree: 7
+Calling remove(77)
+Successfully removed: 77
+Calling getSize().
+getSize returned: 6
+Calling getHeightOfTree
+Successfully retrieved height of tree: 6
+Calling add(99).
+Successfully added: 99
+Calling add(121).
+Successfully added: 121
+Calling add(110).
+Successfully added: 110
+Calling add(132).
+Successfully added: 132
+Calling add(143).
+Successfully added: 143
+Calling add(154).
+Successfully added: 154
+Calling getSize().
+getSize returned: 10
+Calling getHeightOfTree
+Successfully retrieved height of tree: 11
+Calling printBreadthFirst
+Performing Breadth First traversal
+Node key: 11
+Node key: 22
+Node key: 33
+Node key: 55
+Node key: 66
+Node key: 88
+Node key: 99
+Node key: 121
+Node key: 110
+Node key: 132
+Node key: 143
+Node key: 154
+Successfully printed tree breadth first
+Calling printDepthFirst
+Performing Depth First via PreOrder traversal
+Performing Pre-order traversal
+Node key: 11
+Node key: 22
+Node key: 33
+Node key: 55
+Node key: 66
+Node key: 88
+Node key: 99
+Node key: 121
+Node key: 110
+Node key: 132
+Node key: 143
+Node key: 154
+Successfully printed tree depth first
+Calling printInOrder
+
+Performing in-order traversal
+Node key: 11
+Node key: 22
+Node key: 33
+Node key: 55
+Node key: 66
+Node key: 88
+Node key: 99
+Node key: 110
+Node key: 121
+Node key: 132
+Node key: 143
+Node key: 154
+End of binary search tree
+Successfully printed tree inorder
+Calling printPostOrder
+Performing Post-order traversal
+Node key: 110
+Node key: 154
+Node key: 143
+Node key: 132
+Node key: 121
+Node key: 99
+Node key: 88
+Node key: 66
+Node key: 55
+Node key: 33
+Node key: 22
+Node key: 11
+Successfully printed tree post order
+Calling printPreOrder
+Performing Pre-order traversal
+Node key: 11
+Node key: 22
+Node key: 33
+Node key: 55
+Node key: 66
+Node key: 88
+Node key: 99
+Node key: 121
+Node key: 110
+Node key: 132
+Node key: 143
+Node key: 154
+Successfully printed tree pre order
+Calling printCache
+
+
+Printing out the cache contents
+
+Here are the FIFO List contents:
+FIFO Node key: 154, fullName: Tony Smith10, address: 12345 Main St, city: Oakland, state: CA, zip: 12345
+FIFO Node key: 143, fullName: Tony Doe9, address: 1234 Cabin St, city: Oakland, state: CA, zip: 12345
+FIFO Node key: 132, fullName: Tony Smith10, address: 12345 Main St, city: Oakland, state: CA, zip: 12345
+FIFO Node key: 110, fullName: Tony Doe9, address: 1234 Cabin St, city: Oakland, state: CA, zip: 12345
+FIFO Node key: 121, fullName: Tony Smith10, address: 12345 Main St, city: Oakland, state: CA, zip: 12345
+FIFO Node key: 99, fullName: Tony Doe9, address: 1234 Cabin St, city: Oakland, state: CA, zip: 12345
+FIFO Node key: 88, fullName: Tony Doe8, address: 1234 Auto St, city: Oakland, state: CA, zip: 12345
+FIFO Node key: 66, fullName: Tony Do6e, address: 1234 Jack St, city: Oakland, state: CA, zip: 12345
+FIFO Node key: 55, fullName: Bill Doe5, address: 1234 Brown St, city: Oakland, state: CA, zip: 12345
+FIFO Node key: 33, fullName: Bill Doe3, address: 1234 Oak St, city: Oakland, state: CA, zip: 12345
+End of FIFO List
+
+Here are the Hash Table contents (10 entries):
+Bucket 0: 
+FIFO info from cacheManager:  Node key: 154
+FIFO info from cacheManager:  Node key: 143
+FIFO info from cacheManager:  Node key: 132
+FIFO info from cacheManager:  Node key: 110
+FIFO info from cacheManager:  Node key: 121
+FIFO info from cacheManager:  Node key: 99
+FIFO info from cacheManager:  Node key: 88
+FIFO info from cacheManager:  Node key: 66
+FIFO info from cacheManager:  Node key: 55
+FIFO info from cacheManager:  Node key: 33
+Bucket 1: Empty
+Bucket 2: Empty
+Bucket 3: Empty
+Bucket 4: Empty
+Bucket 5: Empty
+Bucket 6: Empty
+Bucket 7: Empty
+Bucket 8: Empty
+Bucket 9: Empty
+Bucket 10: Empty
+End of table
+
+
+Performing in-order traversal
+Node key: 11
+Node key: 22
+Node key: 33
+Node key: 55
+Node key: 66
+Node key: 88
+Node key: 99
+Node key: 110
+Node key: 121
+Node key: 132
+Node key: 143
+Node key: 154
+End of binary search tree
+
+Performing reverse-order traversal
+Node key: 154
+Node key: 143
+Node key: 132
+Node key: 121
+Node key: 110
+Node key: 99
+Node key: 88
+Node key: 66
+Node key: 55
+Node key: 33
+Node key: 22
+Node key: 11
+End of binary search tree
+
+End of cache contents
+
+Successfully printed cache
+
+Calling printList
+
+Here are the FIFO List contents:
+FIFO Node key: 154, fullName: Tony Smith10, address: 12345 Main St, city: Oakland, state: CA, zip: 12345
+FIFO Node key: 143, fullName: Tony Doe9, address: 1234 Cabin St, city: Oakland, state: CA, zip: 12345
+FIFO Node key: 132, fullName: Tony Smith10, address: 12345 Main St, city: Oakland, state: CA, zip: 12345
+FIFO Node key: 110, fullName: Tony Doe9, address: 1234 Cabin St, city: Oakland, state: CA, zip: 12345
+FIFO Node key: 121, fullName: Tony Smith10, address: 12345 Main St, city: Oakland, state: CA, zip: 12345
+FIFO Node key: 99, fullName: Tony Doe9, address: 1234 Cabin St, city: Oakland, state: CA, zip: 12345
+FIFO Node key: 88, fullName: Tony Doe8, address: 1234 Auto St, city: Oakland, state: CA, zip: 12345
+FIFO Node key: 66, fullName: Tony Do6e, address: 1234 Jack St, city: Oakland, state: CA, zip: 12345
+FIFO Node key: 55, fullName: Bill Doe5, address: 1234 Brown St, city: Oakland, state: CA, zip: 12345
+FIFO Node key: 33, fullName: Bill Doe3, address: 1234 Oak St, city: Oakland, state: CA, zip: 12345
+End of FIFO List
+Successfully called printList
+Calling getSize().
+getSize returned: 10
+Calling getHeightOfTree
+Successfully retrieved height of tree: 11
+
+
+Finished processing testcase: testCase4.
+
+
+
+Processing testCase5 commands:
+
+
+Calling add(53).
+Successfully added: 53
+Calling add(42).
+Successfully added: 42
+Calling add(80).
+Successfully added: 80
+Calling getSize().
+getSize returned: 3
+Calling add(23).
+Successfully added: 23
+Calling add(34).
+Successfully added: 34
+Calling add(86).
+Successfully added: 86
+Calling remove(101)
+Successfully removed: 101
+Calling getSize().
+getSize returned: 6
+Calling add(67).
+Successfully added: 67
+Calling add(9).
+Successfully added: 9
+Calling getSize().
+getSize returned: 8
+Calling getHeightOfTree
+Successfully retrieved height of tree: 4
+Calling printBreadthFirst
+Performing Breadth First traversal
+Node key: 53
+Node key: 42
+Node key: 80
+Node key: 23
+Node key: 67
+Node key: 86
+Node key: 9
+Node key: 34
+Successfully printed tree breadth first
+Calling printDepthFirst
+Performing Depth First via PreOrder traversal
+Performing Pre-order traversal
+Node key: 53
+Node key: 42
+Node key: 23
+Node key: 9
+Node key: 34
+Node key: 80
+Node key: 67
+Node key: 86
+Successfully printed tree depth first
+Calling printInOrder
+
+Performing in-order traversal
+Node key: 9
+Node key: 23
+Node key: 34
+Node key: 42
+Node key: 53
+Node key: 67
+Node key: 80
+Node key: 86
+End of binary search tree
+Successfully printed tree inorder
+Calling printPostOrder
+Performing Post-order traversal
+Node key: 9
+Node key: 34
+Node key: 23
+Node key: 42
+Node key: 67
+Node key: 86
+Node key: 80
+Node key: 53
+Successfully printed tree post order
+Calling printPreOrder
+Performing Pre-order traversal
+Node key: 53
+Node key: 42
+Node key: 23
+Node key: 9
+Node key: 34
+Node key: 80
+Node key: 67
+Node key: 86
+Successfully printed tree pre order
+Calling printCache
+
+
+Printing out the cache contents
+
+Here are the FIFO List contents:
+FIFO Node key: 9, fullName: John Doe7, address: 1234 Flower St, city: Oakland, state: CA, zip: 12345
+FIFO Node key: 67, fullName: John Doe6, address: 1234 Flower St, city: Oakland, state: CA, zip: 12345
+FIFO Node key: 86, fullName: John Doe5, address: 1234 Jack St, city: Oakland, state: CA, zip: 12345
+FIFO Node key: 34, fullName: John Doe4, address: 1234 Brown St, city: Oakland, state: CA, zip: 12345
+FIFO Node key: 23, fullName: John Doe3, address: 1234 Elm St, city: Oakland, state: CA, zip: 12345
+FIFO Node key: 80, fullName: John Doe2, address: 1234 Oak St, city: Oakland, state: CA, zip: 12345
+FIFO Node key: 42, fullName: John Doe1, address: 1234 Main St, city: Oakland, state: CA, zip: 12345
+FIFO Node key: 53, fullName: John Smith, address: 123 Main St, city: Oakland, state: CA, zip: 12345
+End of FIFO List
+
+Here are the Hash Table contents (8 entries):
+Bucket 0: Empty
+Bucket 1: 
+FIFO info from cacheManager:  Node key: 67
+FIFO info from cacheManager:  Node key: 34
+FIFO info from cacheManager:  Node key: 23
+Bucket 2: Empty
+Bucket 3: 
+FIFO info from cacheManager:  Node key: 80
+Bucket 4: Empty
+Bucket 5: Empty
+Bucket 6: Empty
+Bucket 7: Empty
+Bucket 8: Empty
+Bucket 9: 
+FIFO info from cacheManager:  Node key: 9
+FIFO info from cacheManager:  Node key: 86
+FIFO info from cacheManager:  Node key: 42
+FIFO info from cacheManager:  Node key: 53
+Bucket 10: Empty
+End of table
+
+
+Performing in-order traversal
+Node key: 9
+Node key: 23
+Node key: 34
+Node key: 42
+Node key: 53
+Node key: 67
+Node key: 80
+Node key: 86
+End of binary search tree
+
+Performing reverse-order traversal
+Node key: 86
+Node key: 80
+Node key: 67
+Node key: 53
+Node key: 42
+Node key: 34
+Node key: 23
+Node key: 9
+End of binary search tree
+
+End of cache contents
+
+Successfully printed cache
+
+Calling printList
+
+Here are the FIFO List contents:
+FIFO Node key: 9, fullName: John Doe7, address: 1234 Flower St, city: Oakland, state: CA, zip: 12345
+FIFO Node key: 67, fullName: John Doe6, address: 1234 Flower St, city: Oakland, state: CA, zip: 12345
+FIFO Node key: 86, fullName: John Doe5, address: 1234 Jack St, city: Oakland, state: CA, zip: 12345
+FIFO Node key: 34, fullName: John Doe4, address: 1234 Brown St, city: Oakland, state: CA, zip: 12345
+FIFO Node key: 23, fullName: John Doe3, address: 1234 Elm St, city: Oakland, state: CA, zip: 12345
+FIFO Node key: 80, fullName: John Doe2, address: 1234 Oak St, city: Oakland, state: CA, zip: 12345
+FIFO Node key: 42, fullName: John Doe1, address: 1234 Main St, city: Oakland, state: CA, zip: 12345
+FIFO Node key: 53, fullName: John Smith, address: 123 Main St, city: Oakland, state: CA, zip: 12345
+End of FIFO List
+Successfully called printList
+Calling printRange(9, 35)
+Printing nodes in range [9, 35]
+Node key: 9
+Node key: 23
+Node key: 34
+Successfully called printRange.
+
+
+Finished processing testcase: testCase5.
+
+

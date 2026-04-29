@@ -1,0 +1,116 @@
+
+Processing testCase1 commands:
+
+
+Calling isEmpty().
+isEmpty returned: 1
+Calling add(20).
+Successfully added: 20
+Calling add(30).
+Successfully added: 30
+Calling printSort(ascending)
+
+Performing in-order traversal
+Node key: 20
+Node key: 30
+End of binary search tree
+Successfully called printSort.
+Calling printSort(descending)
+
+Performing reverse-order traversal
+Node key: 30
+Node key: 20
+End of binary search tree
+Successfully called printSort.
+Calling clear()
+Successfully called clear.
+Calling isEmpty().
+isEmpty returned: 1
+Calling add(40).
+Successfully added: 40
+Calling add(50).
+Successfully added: 50
+Calling remove(106)
+Successfully removed: 106
+Calling getHeightOfTree
+Successfully retrieved height of tree: 2
+Calling printBreadthFirst
+Performing Breadth First traversal
+Node key: 40
+Node key: 50
+Successfully printed tree breadth first
+Calling printDepthFirst
+Performing Depth First via PreOrder traversal
+Performing Pre-order traversal
+Node key: 40
+Node key: 50
+Successfully printed tree depth first
+Calling printInOrder
+
+Performing in-order traversal
+Node key: 40
+Node key: 50
+End of binary search tree
+Successfully printed tree inorder
+Calling printPostOrder
+Performing Post-order traversal
+Node key: 50
+Node key: 40
+Successfully printed tree post order
+Calling printPreOrder
+Performing Pre-order traversal
+Node key: 40
+Node key: 50
+Successfully printed tree pre order
+Calling printCache
+
+
+Printing out the cache contents
+
+Here are the FIFO List contents: 
+FIFO Node contents-> Key: 50, fullName: John Doe5, address: 1234 State St, city: Oakland, state: CA, zip: 12345 
+FIFO Node contents-> Key: 40, fullName: John Doe4, address: 1234 Home St, city: Oakland, state: CA, zip: 12345 
+End of FIFO List
+
+Here are the Hash Table contents (2 entries):
+Bucket 0: Empty
+Bucket 1: Empty
+Bucket 2: Empty
+Bucket 3: Empty
+Bucket 4: Empty
+Bucket 5: Empty
+Bucket 6: 
+FIFO info from cacheManager:  Node key: 50
+Bucket 7: 
+FIFO info from cacheManager:  Node key: 40
+Bucket 8: Empty
+Bucket 9: Empty
+Bucket 10: Empty
+End of table
+
+Performing in-order traversal
+Node key: 40
+Node key: 50
+End of binary search tree
+
+Performing reverse-order traversal
+Node key: 50
+Node key: 40
+End of binary search tree
+
+End of cache contents
+
+Successfully printed cache
+
+Calling printList
+
+Here are the FIFO List contents: 
+FIFO Node contents-> Key: 50, fullName: John Doe5, address: 1234 State St, city: Oakland, state: CA, zip: 12345 
+FIFO Node contents-> Key: 40, fullName: John Doe4, address: 1234 Home St, city: Oakland, state: CA, zip: 12345 
+End of FIFO List
+Successfully called printList
+Calling isEmpty().
+isEmpty returned: 0
+
+
+Finished processing testcase: testCase1.
