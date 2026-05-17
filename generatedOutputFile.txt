@@ -5,9 +5,9 @@ Processing testCase1 commands:
 Calling isEmpty().
 isEmpty returned: 1
 Calling add(20).
-Successfully added: 20
+Successfully added: 20 with statusLevel: Platinum
 Calling add(30).
-Successfully added: 30
+Successfully added: 30 with statusLevel: Gold
 Calling printSort(ascending)
 
 Performing in-order traversal
@@ -27,9 +27,9 @@ Successfully called clear.
 Calling isEmpty().
 isEmpty returned: 1
 Calling add(40).
-Successfully added: 40
+Successfully added: 40 with statusLevel: 
 Calling add(50).
-Successfully added: 50
+Successfully added: 50 with statusLevel: 
 Calling remove(106)
 Successfully removed: 106
 Calling getHeightOfTree
@@ -122,23 +122,23 @@ Processing testCase2 commands:
 
 
 Calling add(101).
-Successfully added: 101
+Successfully added: 101 with statusLevel: Gold
 Calling add(102).
-Successfully added: 102
+Successfully added: 102 with statusLevel: 
 Calling add(202).
-Successfully added: 202
+Successfully added: 202 with statusLevel: 
 Calling getSize().
 getSize returned: 3
 Calling add(303).
-Successfully added: 303
+Successfully added: 303 with statusLevel: 
 Calling add(402).
-Successfully added: 402
+Successfully added: 402 with statusLevel: 
 Calling add(502).
-Successfully added: 502
+Successfully added: 502 with statusLevel: 
 Calling add(602).
-Successfully added: 602
+Successfully added: 602 with statusLevel: 
 Calling add(702).
-Successfully added: 702
+Successfully added: 702 with statusLevel: 
 Calling printSort(ascending)
 
 Performing in-order traversal
@@ -178,11 +178,11 @@ contains(202) returned: 0
 Calling contains(901).
 contains(901) returned: 0
 Calling add(808).
-Successfully added: 808
+Successfully added: 808 with statusLevel: 
 Calling remove(702)
 Successfully removed: 702
 Calling add(902).
-Successfully added: 902
+Successfully added: 902 with statusLevel: Platinum
 Calling getHeightOfTree
 Successfully retrieved height of tree: 8
 Calling printBreadthFirst
@@ -359,13 +359,13 @@ Processing testCase3 commands:
 Calling getSize().
 getSize returned: 0
 Calling add(106).
-Successfully added: 106
+Successfully added: 106 with statusLevel: 
 Calling add(510).
-Successfully added: 510
+Successfully added: 510 with statusLevel: 
 Calling add(108).
-Successfully added: 108
+Successfully added: 108 with statusLevel: 
 Calling add(611).
-Successfully added: 611
+Successfully added: 611 with statusLevel: 
 Calling printSort(ascending)
 
 Performing in-order traversal
@@ -397,13 +397,13 @@ contains(510) returned: 1
 Calling getSize().
 getSize returned: 3
 Calling add(110).
-Successfully added: 110
+Successfully added: 110 with statusLevel: Gold
 Calling add(111).
-Successfully added: 111
+Successfully added: 111 with statusLevel: 
 Calling add(712).
-Successfully added: 712
+Successfully added: 712 with statusLevel: 
 Calling add(113).
-Successfully added: 113
+Successfully added: 113 with statusLevel: 
 Calling getSize().
 getSize returned: 7
 Calling remove(712)
@@ -411,9 +411,9 @@ Successfully removed: 712
 Calling getSize().
 getSize returned: 6
 Calling add(114).
-Successfully added: 114
+Successfully added: 114 with statusLevel: Bronze
 Calling add(115).
-Successfully added: 115
+Successfully added: 115 with statusLevel: 
 Calling getHeightOfTree
 Successfully retrieved height of tree: 7
 Calling printBreadthFirst
@@ -566,13 +566,13 @@ Processing testCase4 commands:
 Calling getSize().
 getSize returned: 0
 Calling add(11).
-Successfully added: 11
+Successfully added: 11 with statusLevel: 
 Calling add(22).
-Successfully added: 22
+Successfully added: 22 with statusLevel: 
 Calling add(33).
-Successfully added: 33
+Successfully added: 33 with statusLevel: 
 Calling add(44).
-Successfully added: 44
+Successfully added: 44 with statusLevel: 
 Calling contains(106).
 contains(106) returned: 0
 Calling getSize().
@@ -590,13 +590,13 @@ getSize returned: 3
 Calling getHeightOfTree
 Successfully retrieved height of tree: 3
 Calling add(55).
-Successfully added: 55
+Successfully added: 55 with statusLevel: 
 Calling add(66).
-Successfully added: 66
+Successfully added: 66 with statusLevel: 
 Calling add(77).
-Successfully added: 77
+Successfully added: 77 with statusLevel: 
 Calling add(88).
-Successfully added: 88
+Successfully added: 88 with statusLevel: 
 Calling getSize().
 getSize returned: 7
 Calling getHeightOfTree
@@ -608,26 +608,24 @@ getSize returned: 6
 Calling getHeightOfTree
 Successfully retrieved height of tree: 6
 Calling add(99).
-Successfully added: 99
+Successfully added: 99 with statusLevel: Gold
 Calling add(121).
-Successfully added: 121
+Successfully added: 121 with statusLevel: 
 Calling add(110).
-Successfully added: 110
+Successfully added: 110 with statusLevel: Gold
 Calling add(132).
-Successfully added: 132
+Successfully added: 132 with statusLevel: 
 Calling add(143).
-Successfully added: 143
+Successfully added: 143 with statusLevel: Gold
 Calling add(154).
-Successfully added: 154
+Successfully added: 154 with statusLevel: 
 Calling getSize().
 getSize returned: 10
 Calling getHeightOfTree
-Successfully retrieved height of tree: 11
+Successfully retrieved height of tree: 9
 Calling printBreadthFirst
 Performing Breadth First traversal
 Node key: 11
-Node key: 22
-Node key: 33
 Node key: 55
 Node key: 66
 Node key: 88
@@ -642,8 +640,6 @@ Calling printDepthFirst
 Performing Depth First via PreOrder traversal
 Performing Pre-order traversal
 Node key: 11
-Node key: 22
-Node key: 33
 Node key: 55
 Node key: 66
 Node key: 88
@@ -658,8 +654,6 @@ Calling printInOrder
 
 Performing in-order traversal
 Node key: 11
-Node key: 22
-Node key: 33
 Node key: 55
 Node key: 66
 Node key: 88
@@ -682,15 +676,11 @@ Node key: 99
 Node key: 88
 Node key: 66
 Node key: 55
-Node key: 33
-Node key: 22
 Node key: 11
 Successfully printed tree post order
 Calling printPreOrder
 Performing Pre-order traversal
 Node key: 11
-Node key: 22
-Node key: 33
 Node key: 55
 Node key: 66
 Node key: 88
@@ -746,8 +736,6 @@ End of table
 
 Performing in-order traversal
 Node key: 11
-Node key: 22
-Node key: 33
 Node key: 55
 Node key: 66
 Node key: 88
@@ -769,8 +757,6 @@ Node key: 99
 Node key: 88
 Node key: 66
 Node key: 55
-Node key: 33
-Node key: 22
 Node key: 11
 End of binary search tree
 
@@ -796,7 +782,7 @@ Successfully called printList
 Calling getSize().
 getSize returned: 10
 Calling getHeightOfTree
-Successfully retrieved height of tree: 11
+Successfully retrieved height of tree: 9
 
 
 Finished processing testcase: testCase4.
@@ -807,27 +793,27 @@ Processing testCase5 commands:
 
 
 Calling add(53).
-Successfully added: 53
+Successfully added: 53 with statusLevel: 
 Calling add(42).
-Successfully added: 42
+Successfully added: 42 with statusLevel: Platinum
 Calling add(80).
-Successfully added: 80
+Successfully added: 80 with statusLevel: 
 Calling getSize().
 getSize returned: 3
 Calling add(23).
-Successfully added: 23
+Successfully added: 23 with statusLevel: 
 Calling add(34).
-Successfully added: 34
+Successfully added: 34 with statusLevel: 
 Calling add(86).
-Successfully added: 86
+Successfully added: 86 with statusLevel: 
 Calling remove(101)
 Successfully removed: 101
 Calling getSize().
 getSize returned: 6
 Calling add(67).
-Successfully added: 67
+Successfully added: 67 with statusLevel: 
 Calling add(9).
-Successfully added: 9
+Successfully added: 9 with statusLevel: Bronze
 Calling getSize().
 getSize returned: 8
 Calling getHeightOfTree
@@ -979,3 +965,6 @@ Successfully called printRange.
 Finished processing testcase: testCase5.
 
 
+
+
+End of unit tests

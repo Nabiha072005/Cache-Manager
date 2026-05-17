@@ -1,8 +1,9 @@
 /**
-* @author - Hugh Hui
+* @author - Hugh Hui, Nabiha Khalid Sheikh
 * @file dll_node.h -  This header file defines the dll_node (Doubly Linked List Node) structure.
 
 12/30/2024 - initial creation
+05/17/2026 - added statusLevel field for milestone 6
 
 */
 #ifndef DLL_NODE_H
@@ -20,6 +21,7 @@ public:
     std::string city;
     std::string state;
     std::string zip;
+    std::string statusLevel;
 
     DllNode* prev;    // Pointer to the previous node in the list
     DllNode* next;    // Pointer to the next node in the list
@@ -27,7 +29,7 @@ public:
     DllNode(int value);
 
     // Constructor to initialize a node with a specific value
-    DllNode(int value, std::string fullName, std::string address, std::string city, std::string state, std::string zip);
+    DllNode(int value, std::string statusLevel, std::string fullName, std::string address, std::string city, std::string state, std::string zip);
 
 
     /**

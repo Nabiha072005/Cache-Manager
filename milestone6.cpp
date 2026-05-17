@@ -1,6 +1,6 @@
 /**
-* @author - Hugh Hui
-* milestone5.cpp : This file contains the 'main' function. Program execution begins and ends there.
+* @author - Hugh Hui, Nabiha Khalid Sheikh
+* milestone6.cpp : This file contains the 'main' function. Program execution begins and ends there.
 *
 * 09/23/24 - Created by ChatGPT with prompt "write C++ program reads and parses the file: milestone5_config.json"
 *            The file: "milestones5_config.json" is in the following format:
@@ -45,16 +45,22 @@
 1/13/2025 - modified by H. Hui; moved DoublyLinkedList print methods to main as functions; added code to remove oldest nodes from hash table and FIFO list, if FIFOSize limit was exceeded
 1/14/2025 - modified by H. Hui; modified print functions, so that it would print name, address, city, state and zip fields from the FIFO list
 6/9/2025  - modified by H. Hui; modified processTestCase to execute tree commands: height, traversals, etc.
-
+5/17/2026 - modified by N. Sheikh: modified to add database connection
 */
 #define _CRT_SECURE_NO_WARNINGS
-#define CONFIG_FILE "milestone5_config.json"
+#define CONFIG_FILE "milestone6_config.json"
 
 #include <iostream>
 #include <fstream>
 #include <string>
 #include "json.hpp"
 #include "cache_manager.h"
+
+#include <jdbc/mysql_driver.h>
+#include <jdbc/mysql_connection.h>
+#include <jdbc/cppconn/prepared_statement.h>
+#include <jdbc/cppconn/resultset.h>
+#include <jdbc/cppconn/exception.h>
 
 using json = nlohmann::json;
 
@@ -128,7 +134,29 @@ void logToFileAndConsole(const std::string& message) {
 *
 * @return                   nothing, but output is sent to console and written to output file
 */
-void processTestCase(CacheManager* cacheManager, const std::string& testCaseName, const json& testCaseArray) {
+
+std::string getStatusLevel(sql::Connection* conn, const std::string& customerData, int key) {
+    std::string statusLevel = "";
+
+    sql::PreparedStatement* pstmt = conn->prepareStatement(
+        "SELECT statusLevel FROM " + customerData + " WHERE `key` = ?"
+    );
+
+    pstmt->setInt(1, key);
+
+    sql::ResultSet* res = pstmt->executeQuery();
+
+    if (res->next()) {
+        statusLevel = res->getString("statusLevel");
+    }
+
+    delete res;
+    delete pstmt;
+
+    return statusLevel;
+}
+
+void processTestCase(CacheManager* cacheManager, const std::string& testCaseName, const json& testCaseArray, sql::Connection* conn, const std::string& customerData) {
     logToFileAndConsole("\nProcessing " + testCaseName + " commands:\n\n");
 
     for (size_t i = 0; i < testCaseArray.size(); ++i) {
@@ -156,10 +184,27 @@ void processTestCase(CacheManager* cacheManager, const std::string& testCaseName
             }
             else if (actionName == "add") {
                 int key = details["key"];
+
+                std::string statusLevel = getStatusLevel(conn, customerData, key);
+
                 logToFileAndConsole("Calling add(" + std::to_string(key) + ").");
-                DllNode* newDllNode = new DllNode(key, details["fullName"], details["address"], details["city"], details["state"], details["zip"]);
+
+                DllNode* newDllNode = new DllNode(
+                    key,
+                    statusLevel,
+                    details["fullName"],
+                    details["address"],
+                    details["city"],
+                    details["state"],
+                    details["zip"]
+                );
+
                 cacheManager->add(key, newDllNode);
-                logToFileAndConsole("Successfully added: " + std::to_string(key));
+
+                logToFileAndConsole(
+                    "Successfully added: " + std::to_string(key) +
+                    " with statusLevel: " + statusLevel
+                );
             }
             else if (actionName == "remove") {
                 int key = details["key"];
@@ -273,16 +318,31 @@ int main() {
     configFile >> config;
 
     // Retrieve file paths from the config
-    std::string inputFilePath = config["Milestone5"][0]["files"][0]["inputFile"];
-    std::string outputFilePath = config["Milestone5"][0]["files"][0]["outputFile"];
-    std::string errorFilePath = config["Milestone5"][0]["files"][0]["errorLogFile"];
+    std::string inputFilePath = config["Milestone6"][0]["files"][0]["inputFile"];
+    std::string outputFilePath = config["Milestone6"][0]["files"][0]["outputFile"];
+    std::string errorFilePath = config["Milestone6"][0]["files"][0]["errorLogFile"];
 
     // Retrieve hash table size from the config file
-    int HASH_SIZE = config["Milestone5"][0]["defaultVariables"][0]["hashTableSize"];
+    int HASH_SIZE = config["Milestone6"][0]["defaultVariables"][0]["hashTableSize"];
 
     // Retrieve FIFO list size from the config file
-    int FIFO_SIZE = config["Milestone5"][0]["defaultVariables"][0]["FIFOListSize"];
+    int FIFO_SIZE = config["Milestone6"][0]["defaultVariables"][0]["FIFOListSize"];
 
+    std::string schema = config["Milestone6"][0]["defaultVariables"][0]["schema"];
+    std::string customerData = config["Milestone6"][0]["defaultVariables"][0]["customerData"];
+
+    sql::mysql::MySQL_Driver* driver;
+    sql::Connection* conn;
+
+    driver = sql::mysql::get_mysql_driver_instance();
+
+    conn = driver->connect(
+        "tcp://127.0.0.1:3306",
+        "root",
+        "Nabiha2005"
+    );
+
+    conn->setSchema(schema);
     // create the cache manager
     CacheManager* cacheManager = new CacheManager(FIFO_SIZE, HASH_SIZE);
 
@@ -310,7 +370,7 @@ int main() {
         for (json::const_iterator it = testCase.begin(); it != testCase.end(); ++it) {
             const std::string& testCaseName = it.key();
             const json& testCaseArray = it.value();
-            processTestCase(cacheManager, testCaseName, testCaseArray);
+            processTestCase(cacheManager, testCaseName, testCaseArray, conn, customerData);
 
             // clear cache manager out for the next test case
             cacheManager->clear();
@@ -320,8 +380,10 @@ int main() {
     // Close files
     configFile.close();
     inputFile.close();
+    
+    logToFileAndConsole("\n\nEnd of unit tests");
     outFile.close();
 
-    logToFileAndConsole("\n\nEnd of unit tests");
+    delete conn;
     return 0;
 }

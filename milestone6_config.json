@@ -1,9 +1,9 @@
 {
-    "Milestone5": [
+    "Milestone6": [
         {
             "files": [
                 {
-                    "inputFile": "milestone5.json",
+                    "inputFile": "milestone6.json",
                     "outputFile": "generatedOutputFile.txt",
 					"errorLogFile":"logFile.txt"
                 }
@@ -11,7 +11,9 @@
             "defaultVariables": [
                 {
                     "FIFOListSize": 10,
-                    "hashTableSize": 11
+                    "hashTableSize": 11,
+                    "schema": "csc340",
+                    "customerData": "customers"
                 }
             ]
         }
