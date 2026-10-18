@@ -182,7 +182,7 @@ Successfully added: 808 with statusLevel:
 Calling remove(702)
 Successfully removed: 702
 Calling add(902).
-Successfully added: 902 with statusLevel: Platinum
+Successfully added: 902 with statusLevel: Copper
 Calling getHeightOfTree
 Successfully retrieved height of tree: 8
 Calling printBreadthFirst
